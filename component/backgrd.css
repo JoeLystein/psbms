@@ -1,0 +1,18 @@
+#backgrdText{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.roB{
+    border: 100px solid black;
+    background-image:url(./PSBMS.png);  
+    float: right;
+    height: 90vh;
+    width: 909px;
+    background-repeat: no-repeat;
+    background-position: 1ch;
+    background-size: contain;
+    background-color: white;
+
+    
+}

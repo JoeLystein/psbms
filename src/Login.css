@@ -17,7 +17,7 @@ body, html, #root, .app, .container {
   .loginForm {
    box-sizing: border-box;
    width: 100%;
-   max-width: 600px;
+   max-width: 500px;
    padding-left: 20px;
    padding-right: 20px;
   }
