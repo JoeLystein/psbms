@@ -21,8 +21,6 @@ class App extends React.Component {
                   <Route path="/Contact" component={Contact}/>
                   <Route path="/About" component={About}/>
                   <Route path="/Signup" component={Signup}/>
-                  
-                  
                 </Switch>
           </Router>
         </div>
