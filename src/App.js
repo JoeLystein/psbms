@@ -20,7 +20,7 @@ class App extends React.Component {
                   <Route path="/" exact component={Welcome}/>
                   <Route path="/Contact" component={Contact}/>
                   <Route path="/About" component={About}/>
-                  <Route path="/Signup" component={Signup}/>
+                 
                 </Switch>
           </Router>
         </div>
@@ -32,6 +32,7 @@ class App extends React.Component {
     <Router>
       <Switch>
          <Route path="/Loginpage" component={Loginpage}/>
+         <Route path="/Signup" component={Signup}/>
          <Route component={DefaultRoutes}/>
       </Switch>
     </Router>
