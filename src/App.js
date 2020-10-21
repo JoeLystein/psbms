@@ -8,23 +8,36 @@ import Loginpage from './Loginpage';
 import Signup from './Signup';
 import {BrowserRouter as Router,Switch, Route } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-        <Router> 
-          <Nav/>
-            <Switch>
-              <Route path="/" exact component={Welcome}/>
-              <Route path="/Contact" component={Contact}/>
-              <Route path="/About" component={About}/>
-              <Route path="/Loginpage" component={Loginpage}/>
-              <Route path="/Signup" component={Signup}/>
-            </Switch>
-      </Router>
+class App extends React.Component {
 
+  render(){
+    const DefaultRoutes= () =>{
+      return (
+        <div className="App">
+            <Router> 
+              <Nav/>
+                <Switch>
+                  <Route path="/" exact component={Welcome}/>
+                  <Route path="/Contact" component={Contact}/>
+                  <Route path="/About" component={About}/>
+                  <Route path="/Signup" component={Signup}/>
+                  
+                </Switch>
+          </Router>
+        </div>
+      )
+  }
 
-    </div>
-  );
+  return(
+    <Router>
+      <Switch>
+         <Route component={DefaultRoutes}/>
+         <Route path="/Loginpage" component={Loginpage}/>
+      </Switch>
+    </Router>
+   
+  )
+}
 }
 
 export default App; 
