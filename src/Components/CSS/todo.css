@@ -1,13 +1,5 @@
 body{
   background-color: white;
-  background-image: url('./PSBMS.png'); 
-  background-repeat: no-repeat;
-  background-position: 800px;
-  background-attachment: fixed;
-  background-size: ;
-  background-size: small;
-  float:right;
-  width:100%;
 }
 h1{
   font-size: 38px;
@@ -42,7 +34,7 @@ input[type=submit] {
  background-color: #ddd;
   border: none;
   color: black;
-  padding: 10px 20px;
+  padding: 10px 21px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -56,7 +48,7 @@ input[type=submit] {
 select {
   width: 80%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 9px 0;
   box-sizing: content-box;
   border: none;
   border-radius: 15px;
@@ -66,13 +58,14 @@ select {
 }
 
 
-.container{
+.containerF{
   height: 100vh;
   /*width: 800px; must uncomment this to have the registration form and the image*/
   /*background: red; must uncomment this to have the registration form and the image */
   background: rgb(73,79,82);
   color: white;
   font-weight: bold; 
+  font-size: x-large;
   display: flex;
   align-items: center;
   justify-content: center;

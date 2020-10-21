@@ -1,11 +1,16 @@
 import React from 'react';
-import './App.css';
+import './Signup.css';
+import Form from './Components/Form'
+
+
+
 
 function Signup() {
-  return (
-    <div>
-      <h1>Sign Up</h1>
+ return( 
+    <div className="Signup">
+      <Form />
     </div>
+
   );
 }
 
