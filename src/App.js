@@ -10,8 +10,8 @@ import {BrowserRouter as Router,Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App"> 
-      <Router> 
+    <div className="App">
+        <Router> 
           <Nav/>
             <Switch>
               <Route path="/" exact component={Welcome}/>
@@ -27,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
