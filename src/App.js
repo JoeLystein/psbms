@@ -9,11 +9,13 @@ import Signup from './Signup'
 
 function App() {
   return (
-    <div className="App">
-        <h1>App</h1>
-        <Welcome/>
+    <div className="App"> 
         <Nav/>
-        
+        <Contact/>
+        <About/> 
+        <Loginpage/>
+        <Signup/>
+
 
     </div>
   );
