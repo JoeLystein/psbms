@@ -6,7 +6,7 @@ import Contact from './Contact';
 import About from './About';
 import Loginpage from './Loginpage';
 import Signup from './Signup';
-import {BrowserRouter as Router,Switch, Route } from 'react-router-dom';
+import {BrowserRouter as Router,Switch, Route, Redirect } from 'react-router-dom';
 
 class App extends React.Component {
 
@@ -21,6 +21,7 @@ class App extends React.Component {
                   <Route path="/Contact" component={Contact}/>
                   <Route path="/About" component={About}/>
                   <Route path="/Signup" component={Signup}/>
+                  <Route path="/Loginpage" component={Loginpage}/>
                   
                 </Switch>
           </Router>
@@ -28,11 +29,12 @@ class App extends React.Component {
       )
   }
 
+
   return(
     <Router>
       <Switch>
+         
          <Route component={DefaultRoutes}/>
-         <Route path="/Loginpage" component={Loginpage}/>
       </Switch>
     </Router>
    

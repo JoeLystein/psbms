@@ -19,14 +19,13 @@ function Nav() {
                 <li>About</li>
             </Link>
             
-            <Link style={navStyle} to='/Loginpage'>
-                <li>Login</li>
+            <Link style={navStyle} to='/Contact'>
+                <li>PSBMS</li>
             </Link>
             
             <Link style={navStyle} to='/Contact'>
                 <li>Contact us</li>
             </Link>
-            
         </ul>
     </nav>
   );
