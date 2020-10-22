@@ -40,12 +40,6 @@ class Form extends Component {
         })
     }
 
-    genderhandler = (event) => {
-        this.setState({
-            gender: event.target.value
-        })
-    }
-
     handleSubmit = (event) => {
         alert(`${this.state.firstName} ${this.state.lastName}  Registered Successfully !!!!`)
         console.log(this.state);
@@ -54,7 +48,6 @@ class Form extends Component {
             lastName: "",
             password: '',
             email:"",
-            gender: "",
         })
      event.preventDefault()
         
@@ -71,11 +64,6 @@ class Form extends Component {
                     <label>LastName :</label> <input type="text" value={this.state.lastName} onChange={this.lasthandler} placeholder="LastName..." /><br />
                     <label>Email :</label> <input type="text" value={this.state.email} onChange={this.emailhandler} placeholder="email..." /><br />
                     <label>Password :</label> <input type="password" value={this.state.password} onChange={this.passwordhandler} placeholder="Password..." /><br />
-                    <label>Gender :</label><select onChange={this.genderhandler} defaultValue="Select Gender">
-                        <option defaultValue>Select Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                    </select><br />
                     <input type="submit" value="Submit" />
                 </form>
 

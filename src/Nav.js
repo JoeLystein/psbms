@@ -19,7 +19,7 @@ function Nav() {
                 <li>About</li>
             </Link>
             
-            <Link style={navStyle} to='/Contact'>
+            <Link style={navStyle} to='/PSBMS'>
                 <li>PSBMS</li>
             </Link>
             
