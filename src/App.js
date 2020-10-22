@@ -6,6 +6,7 @@ import Contact from './Contact';
 import About from './About';
 import Loginpage from './Loginpage';
 import Signup from './Signup';
+import Sidebar from './Comp/Components/Sidebar.js';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
 
 class App extends React.Component {
@@ -33,11 +34,13 @@ class App extends React.Component {
       <Switch>
          <Route path="/Loginpage" exact component={Loginpage}/>
          <Route path="/Signup" component={Signup}/>
+         <Route path="/Sidebar" component={Sidebar}/>
          <Route component={DefaultRoutes}/>
       </Switch>
     </Router>
    
-  )
+  );
+
 }
 }
 
